@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Воспроизведение трека</title>
+</head>
+<body>
+
+<h1>Воспроизведение трека</h1>
+<button id="playButton">Воспроизвести</button>
+
+<audio id="audio" src="Igor_-_Pod_zalupojj_tvorog_78247891.mp3"></audio>
+
+<script>
+    const playButton = document.getElementById('playButton');
+    const audio = document.getElementById('audio');
+
+    playButton.addEventListener('click', () => {
+        audio.play();
+    });
+</script>
+
+</body>
+</html>
