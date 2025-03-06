@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальный сайт</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Скрыть прокрутку */
+        }
+        button {
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="playButton">Воспроизвести</button>
+    <audio id="audio" src="Igor_-_Pod_zalupojj_tvorog_78247891.mp3"></audio>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('audio');
+
+        // Автоматическое воспроизведение при загрузке страницы
+        window.addEventListener('load', () => {
+            audio.play();
+        });
+
+        playButton.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
+
+</body>
+</html>
